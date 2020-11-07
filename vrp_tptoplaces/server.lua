@@ -16,7 +16,7 @@ places = {
 
 RegisterCommand("tptoplaces", function(player, choice)
   local user_id = vRP.getUserId({player})
-     if vRP.hasPermission({user_id, "treflaa.tptoplaces"}) then  -- asta trebuie sa o bagi in vrp/cfg/groups.lua la ce grad vrei tu sa aiba acces    /     you have to put it in vrp/cfg/groups.lua to what degree you want to have access
+     if vRP.hasPermission({user_id, "treflaa.tptoplaces"}) then  -- asta trebuie sa o bagi in vrp/cfg/groups.lua la ce grad vrei tu sa aiba acces    /     you have to put it in vrp/cfg/groups.lua to what group you want to have access
       local menu_treflaa = {}
         for k, v in pairs(places) do
            menu_treflaa[k] = {function(player, choice)
